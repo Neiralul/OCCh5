@@ -5,7 +5,6 @@ let content = '';
 fetch('http://localhost:3000/api/products/')
     .then(res => res.json())
     .then((result) => { 
-      console.log(result);
       result.forEach(function (item){
       content +=  
       '<a href="./product.html?id='+item._id+'">'
